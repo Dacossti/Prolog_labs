@@ -181,7 +181,7 @@ most_PopCountry_in(Continent):-
 */
 
 
-getCapitalPopList(Continent, CapPopList):-
+capitalPopList(Continent, CapPopList):-
                                                             country(I1, _, Continent, _), 
                                                             is_Capital(I2, I1), 
                                                             capital(I2, _, Pop),
