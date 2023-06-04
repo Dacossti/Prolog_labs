@@ -151,7 +151,7 @@ list_max_elem([X,Y|Rest], Max) :-
 
 
 
-getCountryPopList(Continent, CountryPopList):-
+countryPopList(Continent, CountryPopList):-
                                                             country(_, _, Continent, Pop), 
                                                             list_append(Pop, CountryPopList, CountryPopList).
                                                 
