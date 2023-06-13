@@ -153,8 +153,9 @@ clauses
 
 clauses
     run() :-
-        consult("../fa.txt", countriesDB),
-        !.
+        console::init(),
+        file::consult("../fa.txt", countriesDB),
+        fail.
 
     run() :-
         capitalOf("Haiti"),
