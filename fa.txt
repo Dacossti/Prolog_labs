@@ -32,18 +32,17 @@ clauses
     is_Capital(17, 2).
     is_Capital(18, 1).
     is_Capital(19, 0).
-
-
-climate("Haiti", temperate).
-climate("USA", cold).
-climate("Canada", cold).
-climate("Spain", cold).
-climate("France", cold).
-climate("Congo", hot).
-climate("Madagascar", hot).
-climate("New_Zealand", temperate).
-climate("Japan", cold).
-climate("China", cold).
+    
+    climate("Haiti", temperate).
+    climate("USA", cold).
+    climate("Canada", cold).
+    climate("Spain", cold).
+    climate("France", cold).
+    climate("Congo", hot).
+    climate("Madagascar", hot).
+    climate("New_Zealand", temperate).
+    climate("Japan", cold).
+    climate("China", cold).
 
 
 	
