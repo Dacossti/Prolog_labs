@@ -1,0 +1,54 @@
+%clauses
+/*Country(Id, Name, Continent, Population(million))*/
+    country(0, "USA", "America", 331.9).
+    country(1, "Canada", "America", 38.25).
+    country(2, "China", "Asia", 1455.1).
+    country(3, "France", "Europe", 67.75).
+    country(4, "Congo", "Africa", 95.89).
+    country(5, "Spain", "Europe", 47.42).
+    country(6, "New_Zealand", "Australia", 5.123).
+    country(7, "Haiti", "America", 11.45).
+    country(8, "Madagascar", "Africa", 28.92).
+    country(9, "Japan", "Asia", 125.7).
+
+%clauses
+/*Capital(Id, Name, Population(million))*/
+    capital(10, "Tokyo", 13.96).
+    capital(11, "Antananarivo", 1.275).
+    capital(12, "Port_au_Prince", 0.987).
+    capital(13, "Wellington", 0.212).
+    capital(14, "Paris", 3.223).
+    capital(15, "Brazzaville", 1.696).
+    capital(16, "Madrid", 2.161).
+    capital(17, "Beijing", 21.54).
+    capital(18, "Ottawa", 0.994).
+    capital(19, "Washington_DC", 0.712).
+
+%clauses
+/*Is_Capital(Id_capital, Id_country).*/
+    is_Capital(10, 9).
+    is_Capital(11, 8).
+    is_Capital(12, 7).
+    is_Capital(13, 6).
+    is_Capital(14, 3).
+    is_Capital(15, 4).
+    is_Capital(16, 5).
+    is_Capital(17, 2).
+    is_Capital(18, 1).
+    is_Capital(19, 0).
+
+
+%clauses
+	climate("Haiti", temperate).
+	climate("USA", cold).
+	climate("Canada", cold).
+	climate("Spain", cold).
+	climate("France", cold).
+	climate("Congo", hot).
+	climate("Madagascar", hot).
+	climate("New_Zealand", temperate).
+	climate("Japan", cold).
+	climate("China", cold).
+
+
+	
