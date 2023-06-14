@@ -50,21 +50,21 @@ clauses
         nl.
 
 class predicates  %Основные предикаты
-    countryListof : (string Continent) -> string* Country_Population.
-    countryTotatlin : (string Continent) -> integer N.
+    countryListof : (string Continent) -> string* Country.
+    numberofCountriesin : (string Continent) -> integer N.
 
 clauses
     countryListof(Continent) = [ NameCountry || country(_, NameCountry, Continent, _) ].
 
-    countryTotatlin(Continent) = length(countryListof(Continent)).
+    numberofCountriesin(Continent) = length(countryListof(Continent)).
 
 class predicates  %Основные предикаты
-    capitalListof : (string Continent) -> string* Cap_Population determ.
+    capitalListof : (string Continent) -> string* Capital determ.
 clauses
-    capitalListof(Continent) = Cap_Population :-
+    capitalListof(Continent) = Capital :-
         country(I1, _, Continent, _),
         !,
-        Cap_Population =
+        Capital =
             [ NameCap ||
                 is_Capital(I2, I1),
                 capital(I2, NameCap, _)
